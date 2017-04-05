@@ -27,7 +27,7 @@ namespace HappyValleyKennels.controls
             {
 
                 case (userType.Clerk):
-                    Server.Transfer("./home.aspx");
+                    Response.Redirect("./home.aspx");
                     break;
 
                 case (userType.Client):
@@ -46,7 +46,7 @@ namespace HappyValleyKennels.controls
                         Session["Owner"] = owner;
                         Session["OwnerNumber"] = owner.ownerNumber;
                         Session["Reservations"] = ownerReservations;
-                        Server.Transfer("./home.aspx");
+                        Response.Redirect("./home.aspx");
                     }
                     else
                     {
@@ -78,7 +78,7 @@ namespace HappyValleyKennels.controls
         {
             newUser.user = userType.Client;
             Session["User"] = newUser;
-            Server.Transfer("./ManageAccount.aspx");
+            Response.Redirect("./ManageAccount.aspx");
         }
     }
 }
