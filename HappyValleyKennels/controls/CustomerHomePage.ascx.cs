@@ -30,5 +30,12 @@ namespace HappyValleyKennels.controls
             }
             return names;
         }
+        protected void gvUpcomingReservation_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Reservation res = new Reservation();
+            int resNum = Convert.ToInt32(gvUpcomingReservation.SelectedDataKey.Value.ToString());
+            Session["reservation"] = res.getReservation(resNum);
+            Response.Redirect("ManageReservation.aspx");
+        }
     }
 }

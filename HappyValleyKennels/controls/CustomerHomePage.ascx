@@ -8,8 +8,9 @@
         <hr />
 
 
-<asp:GridView ID="gvUpcomingReservation" CssClass="summaryTables" runat="server" EmptyDataText="You have no upcoming reservations :(" AutoGenerateColumns="False" DataSourceID="odsUpcomingRes">
+<asp:GridView ID="gvUpcomingReservation" DataKeyNames="reservationNumber" CssClass="summaryTables" runat="server" EmptyDataText="You have no upcoming reservations :(" AutoGenerateColumns="False" DataSourceID="odsUpcomingRes" OnRowCommand="gvUpcomingReservation_RowCommand" OnSelectedIndexChanged="gvUpcomingReservation_SelectedIndexChanged">
     <Columns>
+        <asp:ButtonField Text ="Edit Reservation" ItemStyle-ForeColor="White"/>
         <asp:TemplateField HeaderText="reservationNumber" SortExpression="reservationNumber">
             <EditItemTemplate>
                 <asp:TextBox ID="TextBox1" runat="server" Text='<%# getPets(Convert.ToInt32(Eval("reservationNumber").ToString())) %>'></asp:TextBox>
