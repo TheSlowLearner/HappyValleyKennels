@@ -16,7 +16,22 @@ namespace HappyValleyKennels.controls
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (Session["reservation"] != null)
+            {
+                ContentPlaceHolder content = (ContentPlaceHolder)Page.Master.FindControl("content");
+                ReservationForm reservationForm = (ReservationForm)content.FindControl("ReservationForm");
 
+                Reservation chosenReservation = (Reservation)Session["reservation"];
+                Panel mainContent = (Panel)content.FindControl("mainContent");
+                reservationForm.reservation = chosenReservation;
+                reservationForm.owner = owner;
+                Session["Reservation"] = chosenReservation;
+                reservationForm.fillInformation(chosenReservation);
+                mainContent.CssClass = mainContent.CssClass.Replace("contentPetList", "");
+                reservationForm.Visible = true;
+                this.Visible = false;
+
+            }
         }
 
         public String getPets(int resNum)
