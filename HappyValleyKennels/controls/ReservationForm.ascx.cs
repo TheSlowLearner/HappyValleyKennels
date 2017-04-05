@@ -32,7 +32,7 @@ namespace HappyValleyKennels.controls
 
         private void checkReservation()
         {
-            if(Session["Reservation"] != null)
+            if (Session["Reservation"] != null)
             {
                 reservation = (Reservation)Session["Reservation"];
                 PetReservation petRes = new PetReservation();
@@ -44,7 +44,6 @@ namespace HappyValleyKennels.controls
         {
             checkOwnerSession();
             checkReservation();
-            addPetPanels();
         }
 
         public void displayReservationList()
@@ -76,7 +75,7 @@ namespace HappyValleyKennels.controls
                 {
                     AccordionPane currPane = ServiceAccordion.Panes.ElementAt(i);
 
-                    if(currPane.ID == pane.ID)
+                    if (currPane.ID == pane.ID)
                     {
                         ServiceAccordion.Panes.Remove(currPane);
                     }
@@ -112,7 +111,7 @@ namespace HappyValleyKennels.controls
                 newPetPanel.ID = "petPanel" + currentPet.petNumber;
                 newPetPanel.pet = currentPet;
 
-                if(reservation != null)
+                if (reservation != null)
                 {
                     newPetPanel = setPetReservation(currentPet.petNumber.ToString(), newPetPanel);
                 }
@@ -132,14 +131,14 @@ namespace HappyValleyKennels.controls
                 //add controls
                 panel.ContentContainer.ID = "content" + currentPet.petNumber;
                 panel.ContentContainer.Controls.Add(newPetPanel);
-               
+
                 ServiceAccordion.Panes.Add(panel);
             }
         }
 
         private PetReservationPanel setPetReservation(String petNum, PetReservationPanel petPanel)
         {
-            
+
             for (int i = 0; i < reservation.petReservation.Count; i++)
             {
                 String currentPetNum = reservation.petReservation.ElementAt(i).pet.petNumber.ToString();
@@ -194,7 +193,6 @@ namespace HappyValleyKennels.controls
             return duration;
         }
 
-   
 
         private AccordionPane getPane(String petNumber)
         {
@@ -221,7 +219,7 @@ namespace HappyValleyKennels.controls
 
             if (makingReservation == true)
             {
-               // displayContent();
+                // displayContent();
                 fillInformation(savedReservation);
                 btnCancel.Visible = true;
             }
@@ -254,7 +252,7 @@ namespace HappyValleyKennels.controls
                 //if they don't have a reservation session then the form is displayed to add a form
                 else
                 {
-                   // displayContent();
+                    // displayContent();
                 }
 
                 if (!IsPostBack)
@@ -438,7 +436,7 @@ namespace HappyValleyKennels.controls
         {
             //enabled buttons
             btnAddPet.Visible = true;
-           // displayContent();
+            // displayContent();
             clear();
 
             btnMakeRes.Visible = true;
@@ -447,13 +445,13 @@ namespace HappyValleyKennels.controls
 
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-           // displaySummary();
+            // displaySummary();
         }
 
         protected void editReservation_Click(object sender, EventArgs e)
         {
             fillInformation(reservation);
-          //  displayContent();
+            //  displayContent();
             enableFields();
             btnAddPet.Visible = false;
             btnUpdateRes.Visible = true;
@@ -466,7 +464,7 @@ namespace HappyValleyKennels.controls
         protected void viewReservation_Click(object sender, EventArgs e)
         {
             fillInformation(reservation);
-         //   displayContent();
+            //   displayContent();
             btnAddPet.Visible = false;
             btnUpdateRes.Visible = false;
             btnEdit.Visible = true;
