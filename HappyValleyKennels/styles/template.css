@@ -1,0 +1,330 @@
+﻿/* Container Format */
+body {
+    background: url(../images/45degreee_fabric.png);
+    background-repeat: repeat;
+    margin: 0px;
+    font-family: sans-serif;
+}
+#mainContent {
+
+}
+#welcome {
+    background-color: rgba(16, 34, 43, 0.7);
+}
+img {
+    float: left;
+    height: 50px !important;
+    width: 60px !important;
+    margin-right: 10px;
+    margin-top: 6px;
+}
+#wrapper {
+    width:  100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#lblWelcome {
+    font-size: 1.4em;
+    color: white;
+    font-weight: bold;
+    margin-left: 20px;
+    vertical-align: text-top;
+}
+#customerInformation {
+    width: 50%;
+    margin: 4% auto;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid thick #BDD684;
+    padding: 11px;
+    font-size: 1em;
+    color: black;
+    box-shadow: 6px 6px 4px black;
+}
+#logo {
+    height: 90px;
+    width: 96px;
+}
+.content {
+    margin: 2% auto;
+    margin-bottom: 0px;
+    padding: 5px 40px;
+    box-shadow: 5px 5px 6px black;
+    border-radius: 10px;
+    overflow: auto;
+    background-color: rgba(16, 34, 43, 0.7) !important;
+    color: white;
+}
+
+.blocks {
+    margin-bottom: 2.5%;
+}
+
+h1 {
+    text-align: center;
+}
+
+hr {
+    color: #BDD684 !important;
+    border: solid thin !important;
+    margin-top: 0px !important;
+}
+
+h3 {
+    margin: 0px;
+    margin-top: 4%;
+}
+
+#blockButtons {
+    margin: 2% 0;
+    width: 100%;
+}
+
+.summaryTables {
+    width: 100%;
+    margin: 2% 0;
+    border: none;
+}
+.summaryTables td {
+    padding: 5px;
+    color: #BDD684;
+    border-color: white;
+    font-weight: bold;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 5px;
+}
+
+.selected {
+    background-color: rgba(226, 240, 214, 0.6);
+    color: rgba(16, 34, 43, 1) !important;
+}
+
+.selected td {
+    color: rgba(16, 34, 43, 1);
+}
+.selected a {
+    color: rgba(16, 34, 43, 1);
+}
+.selected a:hover {
+    color: rgba(16, 34, 43, 1);
+}
+.selected a:active {
+    color: rgba(16, 34, 43, 1);
+}
+td table {
+    margin: 0 auto;
+}
+.summaryTables th {
+    border-bottom: solid thick white;
+    font-weight: bold;
+    padding: 5px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+}
+.editView {
+    display: block;
+    color: #BDD684;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+
+/* Accordion Format */
+
+.contentClass{
+    border: solid medium black;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    border-radius: 0px 0px 10px 10px;
+    background-color: rgba(16, 34, 43, 0.7)
+}
+.contentClass input{
+ color: black;
+ width: 50px;
+}
+input[type='radio'] {
+
+  width:15px;
+  height:15px;
+}
+input[type='radio']:before {
+  content:'';
+  display:block;
+  width:20%;
+  height:20%;
+  margin: 40% auto;    
+  border-radius:50%;    
+}
+input[type='radio']:checked:before {
+  background: #BDD684;
+}
+.headerClass {
+    background-color: lightgray;
+    color: rgba(16, 34, 43, 1);
+    font-weight: bolder;
+    font-size: 1.2em;
+    border: solid medium black;
+    border-radius: 5px;
+    vertical-align: middle;
+     padding: 7px;
+    cursor: pointer;
+}
+
+.headerSelected {
+    background-color: #BDD684;
+    color: rgba(16, 34, 43, 1);
+    font-weight: bolder;
+    font-size: 1.2em;
+    border: solid medium black;
+    border-radius: 5px;
+    padding: 7px;
+}
+
+.accordion {
+    
+    color: white;
+    border-radius: 5px
+}
+
+/* NAV Format */
+
+.container-fluid {
+    background-color: rgba(149, 171, 99, 0.7);
+}
+
+.navbar-default .navbar-brand {
+    color: black;
+}
+
+.validationSummary {
+    width: 90%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    color: black;
+    background-color: #BDD684;
+    border:double medium rgba(16, 34, 43, 1);
+    vertical-align: top;
+    box-shadow: 5px 5px 6px black;
+    margin: 0 auto;
+}
+.navbar-default .navbar-nav>li>a {
+    
+}
+.navbar {
+    margin-bottom: 0px;
+}
+
+.active {
+    background: url(../images/45degreee_fabric.png);
+    background-repeat: repeat;
+    box-shadow: 5px 5px 6px black;
+    color: black;
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+.navButtons {
+    color: black !important;
+    font-size: 1.3em;
+}
+
+/* Control Format */
+.errors {
+    color: #BDD684 !important;
+    font-size: 1.5em;
+    float: left;
+    display: inline-block;
+    margin-right: 3px;
+}
+.secondaryButtons {
+    background: none;
+    border: none;
+    color: white;
+    text-decoration: underline;
+    font-size: 1.2em;
+    box-shadow: none;
+}
+.createButtons {
+    background-color: #BDD684;
+    margin-bottom: 2%;
+    font-weight: bold;
+    height: 28px;
+    border: none;
+    color: black !important;
+    box-shadow: 4px 4px 7px black;
+}
+.createButtons:active {
+    color: black !important;
+    box-shadow: 1px 1px 7px black;
+}
+.readOnly {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: #BDD684 !important;
+    border: none !important;
+    padding: 0px !important;
+}
+
+.glyphicon {
+    margin-right: 10px;
+}
+
+.labels {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    display: block;
+    text-align: left;
+    font-weight: bolder;
+    height: 30px;
+    overflow: auto;
+}
+
+.btn:hover {
+    cursor: pointer;
+    color: white;
+}
+
+#btnLogOut {
+    float: right !important;
+    margin-top: 0px !important;
+}
+
+/* JQuery UI Calendar Format */
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight{
+    border: 1px solid #DAD487;
+    background: #E2F0D6;
+    color: #777620;
+}
+
+/* Wizard Format */
+.sideBarFormat {
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+    color: #BDD684 !important;
+    font-size: 1.2em;
+    height:50px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: solid thin black;
+    border-radius: 10px;
+    box-shadow: 5px 4px 6px black;
+    background-color: rgba(16, 34, 43, 1);
+}
+
+#content_Wizard1_FinishNavigationTemplateContainerID_FinishButton {
+    display: none;
+}
+.nextButtons {
+    display: none;
+}
+
+.sideBarFormat a {
+    color: white;
+}

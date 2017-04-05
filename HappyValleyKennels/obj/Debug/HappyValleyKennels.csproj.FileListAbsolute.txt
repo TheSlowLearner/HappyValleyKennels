@@ -1,0 +1,153 @@
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\ApplicationInsights.config
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\csc.exe
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\vbc.exe
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll.config
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.pdb
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\AjaxControlToolkit.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Oracle.ManagedDataAccess.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.pdb
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.pdb
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.xml
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.xml
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.dll
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.pdb
+C:\Users\berub\Google Drive\Semester 4\Web Programming IV\Assignments\CBerube_C40A02\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.csprojResolveAssemblyReference.cache
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\ApplicationInsights.config
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\csc.exe
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\vbc.exe
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll.config
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.pdb
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Oracle.ManagedDataAccess.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.pdb
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.pdb
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.xml
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.xml
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.csprojResolveAssemblyReference.cache
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.dll
+C:\Users\berub\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.pdb
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\ApplicationInsights.config
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\csc.exe
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\vbc.exe
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll.config
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.pdb
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Oracle.ManagedDataAccess.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.pdb
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.pdb
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.xml
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.xml
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.csprojResolveAssemblyReference.cache
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.dll
+C:\Users\1429189\Desktop\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.pdb
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\ApplicationInsights.config
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\csc.exe
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Collections.Immutable.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\System.Reflection.Metadata.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\vbc.exe
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\roslyn\VBCSCompiler.exe.config
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll.config
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.pdb
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Agent.Intercept.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Oracle.ManagedDataAccess.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkBLL.pdb
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\IronManhvkDB.pdb
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.DependencyCollector.xml
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.Web.xml
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.AI.WindowsServer.xml
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.ApplicationInsights.xml
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.csprojResolveAssemblyReference.cache
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.dll
+E:\IronManHVKA03\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.pdb

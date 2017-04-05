@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="HappyValleyKennels.master.cs" Inherits="HappyValleyKennels.HappyValleyKennels" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Happy Valley Kennels</title>
+     <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <link href="styles/template.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+         
+        <asp:Panel ID="wrapper" runat="server">
+             <div id="welcome">
+                <asp:Label ID="lblWelcome" runat="server" Text=""></asp:Label>
+                 <asp:Button ID="btnLogOut" CssClass="secondaryButtons" runat="server" Text="Log Out" OnClick="btnLogOut_Click" />
+    </div>
+ <nav class="navbar navbar-default">
+     
+  <div class="container-fluid">
+     
+      <div class="navbar-header">
+     <img src="images/logo.png" id="logo" />
+      <a class="navbar-brand" href="#">Happy Valley Kennel</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="./home.aspx" class="navButtons"> <asp:Label ID="lblHome" runat="server" Text="Home"></asp:Label></a></li>
+      <li>
+         <asp:HyperLink ID="hlAccount" CssClass="navButtons" NavigateUrl="./ManageAccount.aspx" runat="server" Text="My Account"></asp:HyperLink>
+      </li>
+     <li>
+         <asp:HyperLink ID="hlPets" CssClass="navButtons" NavigateUrl="./ManagePet.aspx" runat="server" Text="My Pets"></asp:HyperLink>
+      </li>
+      <li>
+         <asp:HyperLink ID="hlReservations" CssClass="navButtons" NavigateUrl="./ManageReservation.aspx" runat="server" Text="My Reservations"></asp:HyperLink>
+      </li>
+    </ul>
+  </div>
+</nav>
+     </asp:Panel>
+
+               <asp:ContentPlaceHolder ID="content" runat="server">
+        </asp:ContentPlaceHolder>
+             <asp:ContentPlaceHolder ID="summary" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <script
+        src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+     <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+     <script src="javascript/DatePicker.js"></script>
+    
+</body>
+</html>

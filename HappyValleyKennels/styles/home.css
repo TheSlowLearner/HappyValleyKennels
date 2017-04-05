@@ -1,0 +1,90 @@
+﻿body {
+}
+.content {
+    width: 700px !important;
+}
+h3{
+    margin: 0px !important;
+}
+#customerInformation {
+    width: 100%;
+    margin: 2% auto;
+    overflow: auto;
+    margin-bottom: 4%;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid thick #BDD684;
+    padding: 11px;
+    font-size: 1em;
+    color: black;
+    box-shadow: 6px 6px 4px black;
+}
+#summary_btnSearch {
+    vertical-align: bottom;
+    margin-bottom: 15px;
+    border: solid thin #10222B;
+    margin-left: 12px;
+    background-color: #BDD684 !important;
+    color: #10222B;
+}
+
+#summary_btnSearch:hover {
+    vertical-align: bottom;
+    border: solid thin #10222B;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    background-color: lightgray;
+    color: #10222B;
+
+}
+#nameSearchBlock { 
+    width: 200px;
+    display: inline-block;
+}
+
+#petSearchBlock {
+    width: 129px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#phoneSearchBlock {
+    width: 130px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+#startSearchBlock{
+    width: 100px;
+    display: inline-block;
+}
+
+#endSearchBlock {
+    width: 100px;
+    display: inline-block;
+    margin-left: 12px;
+}
+
+hr {
+    margin: 0px;
+}
+.panels {
+     height: 200px;
+    overflow: auto;
+}
+.tables {
+    width: 100%;
+    margin: 2% 0;
+   
+}
+.tables td {
+    padding: 5px;
+    color: #BDD684;
+    border-bottom: solid thin white;
+    font-weight: bold;
+}
+
+.tables th {
+    border-bottom: solid thick white;
+    font-weight: bold;
+    padding: 5px;
+}

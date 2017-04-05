@@ -1,0 +1,192 @@
+﻿/* Container Format */
+
+.content {
+    width: 630px !important;
+}
+.contentPetList {
+    width: 950px !important;
+}
+table {
+    margin: 0 auto;
+    width: 97%;
+
+}
+td a{
+    color: white;
+}
+td a:hover {
+    color: white;
+}
+td a:active {
+    color: white;
+}
+.datePicker {
+    color: black;
+    display: block;
+    width: 110px;
+}
+#customerInformation {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+    background: rgba(255, 255, 255, 0.8);
+    border: solid thick #BDD684;
+    padding: 11px;
+    font-size: 1em;
+    color: black;
+    box-shadow: 6px 6px 4px black;
+}
+
+#blockBirthdate {
+    height: 28px;
+}
+#content_lblGender {
+    font-weight: bold;
+}
+#content_lblSize {
+   display: inline-block !important;
+width: 35px;
+font-weight: bold;
+}
+.vaccBlocks{
+    margin-bottom: 2%;
+    width: 200px;
+    display: inline-block;
+}
+
+#blockNotes {
+    display: inline-flex;
+    margin-top: 5.5%;
+}
+
+#content_Wizard1_txtNotes {
+    width: 350px;
+    height: 50px;
+}
+#spayedBlock{
+       width: 100%;
+    display: inline-block;
+}
+
+
+.rightColVaccs {
+    margin-left: 92px;
+}
+
+/* Control Format */
+#lblRequiredInfo {
+    float: left;
+}
+
+#content_txtPetName {
+    width: 200px;
+}
+#content_txtBreed {
+    width: 355px;
+}
+.radioGroups label {
+    margin-right: 5px;
+}
+.radioGroups input {
+    margin-left: 5px;
+}
+
+.editView:hover{
+    display: block;
+    color: lightgray;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+
+
+#lblVaccination{ 
+    margin: 0px;
+    text-align: center;
+    background: #BDD684;
+    border-bottom: solid thick #10222B;
+    color: #10222B;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    padding-top: 3px;
+}
+
+#txtBirthdate {
+    height: 28px;
+    box-shadow: 5px 5px 6px black;
+    border: none;
+    color: black;
+    padding-left: 10px;
+    width: 100px;
+}
+
+
+#lblBirthday {
+    width: 80px;
+    text-align: left;
+}
+#lblPetName {
+    width: 80px;
+    text-align: left;
+}
+#lblBreed {
+    width: 80px;
+    text-align: left;
+}
+
+#lblNotes {
+    width: 135px;
+    text-align: left;
+}
+#txtNotes{
+    height: 100px;
+    width: 460px;
+}
+
+.vaccLabels{
+   height: 28px;
+    background: white;
+    color: black;
+    padding: 3px;
+}
+
+
+.textFields {
+    height: 28px;
+    border: none;
+    background: white;
+    color: black;
+    box-shadow: 4px 4px 7px black;
+    padding: 3px;
+}
+
+input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    vertical-align: sub;
+}
+
+#vac {
+    overflow: auto;
+    height: initial;
+}
+
+input[type=radio] {
+    width:12px; 
+    height:12px;
+}
+
+.radioBtns {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.radioBtns label {
+    margin-left: 10px;
+}
+
+#btnAddNewPet {
+      background-color: #FFE19D !important;
+}

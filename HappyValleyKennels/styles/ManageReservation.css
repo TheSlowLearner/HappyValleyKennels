@@ -1,0 +1,259 @@
+﻿/* Container Formats */
+.content {
+    width: 821px !important;
+ 
+}
+.contentResList {
+    width: 950px !important;
+}
+
+#blockButtons {
+    margin: 1% 0;
+width: 46%;
+float: right;
+}
+#blockButtons input {
+    float: none;
+}
+#content_txtGrooming {
+    width: 10px;
+}
+#content_pnlMedication {
+ position: absolute;
+background-color: #10222B;
+color: white;
+width: 350px;
+box-shadow: 10px 10px 12px black;
+border-radius: 10px;
+padding: 10px;
+height: 420px;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+margin: 0 auto;
+margin-top: 299px;
+overflow: auto;
+}
+#content_pnlMedication input {
+    color: black;
+}
+#nameBlock {
+    width: 210px;
+}
+#dosageBlock {
+    width: 160px;
+}
+#instructionsBlock {
+    width: 250px;
+    height: 100px;
+}
+#endDateBlock {
+    width: 100px;
+}
+#content_btnCancelMedication {
+    color: white !important;
+}
+.medicationButtons {
+    margin-top: 2%;
+    float: right;
+    width: 65%;
+}
+#content_tableServices{
+    margin-bottom: 1%;
+    width: 100%;
+    font-weight: normal;
+}
+.spinner {
+    width: 50px;
+    margin: 0 auto;
+}
+.tdCorner {
+    border: none !important;
+    background: none !important;
+}
+
+.tableHeader {
+    background: #95AB63 !important;
+}
+
+.headers th {
+    border: solid medium #10222B;
+    border-radius: 4px;
+    text-align: center;
+    background: #BDD684;
+    color: black;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+#startBlock {
+    margin-right: 50px;
+    display: inline-block;
+}
+
+#endBlock {
+    display: inline-block;
+}
+
+#petBlock {
+    margin-top: 2%;
+}
+
+.blocks {
+      width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+}
+#content_tableServices td {
+   border: solid medium #10222B;
+   background-color: #E2F0D6;
+   text-align: center;
+   color: black;
+   border-radius: 4px;
+}
+
+#content_tableServices tr {
+  margin-bottom: 10px;
+}
+
+/* Control Formats */
+.editView {
+    display: block;
+    color: #BDD684;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+.medications {
+    color: #10222B;
+    display: block;
+    text-decoration: underline;
+    margin: 1% auto;
+    cursor: pointer;
+}
+
+.editView:hover{
+    display: block;
+    color: lightgray;
+    text-decoration: underline;
+    border: none;
+    background: none;
+}
+
+#btnMakeRes {
+    margin-bottom: 2%;
+}
+.dateLabels {
+    box-shadow: none !important;
+    height: 28px;
+}
+.serviceLabels label{
+    font-style: italic;
+    font-size: initial;
+    font-weight: normal !important;
+}
+.petPanelSelect {
+    color: black;
+    padding: 5px;
+}
+.dateBoxes {
+    width: 110px;
+
+}
+#btnMakeNewRes {
+     background-color: #FFE19D !important;
+}
+#dateWrapper {
+    width: 71%;
+    margin: 0 auto;
+}
+.foodQuantity{
+    width: 150px;
+}
+.nameCheckBox {
+    margin: 0px;
+    text-align: left;
+    padding-left: 6px;
+    display: block;
+}
+#allPetCell {
+        text-align: left;
+        padding-left: 6px;
+}
+#chkAllPet {
+    height: 18px;
+    width: 18px;
+}
+
+.secondaryButtons {
+    margin-left: 10px;
+    background: none;
+    text-decoration: underline;
+    border: none;
+    cursor: pointer;
+}
+
+.dropDownBoxes {
+    text-align: left;
+}
+
+.cellDropDown {
+    margin-left: 5px;
+    width: 90%;
+}
+
+.vaccFields {
+    height: 28px;
+    border: none;
+    background: white;
+    color: black;
+    padding: 3px;
+}
+
+.textFields {
+    height: 28px;
+    border: none;
+    background-color: white;
+    color: black;
+    box-shadow: 4px 4px 7px black;
+    padding: 3px;
+    width: 100px;
+}
+
+input[type=checkbox] {
+    width: 17px;
+    height: 17px;
+    margin-top: 6px;
+    vertical-align: sub;
+    margin-left: 10px;
+}
+
+.radioBtns {
+    font-weight: normal;
+    font-size: 1.3em;
+    margin-left: 10px;
+}
+
+.radioBtns label {
+    margin-left: 10px;
+}
+
+.createButtons {
+    border-style: none;
+    border-color: inherit;
+    border-width: medium;
+    background-color: #BDD684;
+    color: black;
+    box-shadow: 4px 4px 7px black;
+    padding: 3px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.createButtons:active {
+    box-shadow: none;
+    margin-top: 2.15%;
+}

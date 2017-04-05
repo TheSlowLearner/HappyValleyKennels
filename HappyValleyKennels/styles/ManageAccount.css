@@ -1,0 +1,210 @@
+﻿/* Container Format */
+
+.content {
+    width: 650px;
+
+}
+#ownerListContent {
+    width: 1200px !important;
+}
+#confirmation {
+    width: 100px;
+    background: #BDD684;
+    border:solid thin black;
+
+}
+
+#blockFirst{
+    width: 300px;
+    display: inline-block;
+}
+
+#blockLast{
+     width: 251px;
+    display: inline-block;
+}
+#summary_summaryDiv{
+    height: 400px;
+    overflow: auto;
+}
+#blockStreet {
+    width: 278px;
+    display: inline-block;
+    margin-right: 22px;
+}
+td a {
+    color: white;
+}
+
+td a:hover {
+    color: white;
+}
+td a:active {
+    color: lightgray;
+}
+#blockCity{
+    display: inline-block;
+    margin-right: 21px;
+}
+#blockProv{
+    display: inline-block;
+    width: 150px;
+}
+
+ #blockPostal {
+display: inline-block;
+margin-left: 22px;
+vertical-align: top;
+width: 122px;
+ }
+ #content_txtPostal {
+     width: 100px;
+ }
+ #content_blockPhone{
+     width: 120px;
+     display:inline-block;
+     vertical-align: top;
+ }
+ .blockPhoneEmployee {
+     width: 243px;
+     display: inline-block;
+ }
+ #content_blockEmail {
+     width: 300px;
+     height: 63px;
+ }
+ #lblOR {
+     margin-bottom: 2.5%;
+     display: block;
+ }
+
+ .blockEmailEmployee {
+     width: 275px;
+     display: inline-block;
+     margin-left: 10px;
+ }
+#blockEmergFirst {
+width: 250px;
+display: inline-block;
+margin-right: 58px;
+}
+#blockPassword {
+    width: 200px;
+    display: inline-block;
+}
+#content_txtFirst {
+    width: 250px;
+}
+#blockVetName {
+     width: 250px;
+    display: inline-block;
+}
+#blockVetPhone {
+     width: 140px;
+     display:inline-block;
+     vertical-align: top;
+     margin-left: 52px;
+}
+#blockVetStreet {
+      width: 278px;
+    display: inline-block;
+    margin-right: 22px;
+}
+#blockVetCity{
+    display: inline-block;
+    margin-right: 21px;
+}
+#blockVetPostal {
+    margin-left: 24px;
+vertical-align: top;
+width: 100px;
+display: inline-block;
+}
+#blockVetProv {
+       display: inline-block;
+    width: 150px;
+}
+#blockConfirm {
+    width: 200px;
+    margin-left: 105px;
+    display: inline-block;
+}
+#blockEmergPhone {
+    width: 120px;
+}
+#blockEmergLast{
+    width: 250px;
+    display: inline-block;
+}
+#sameVetBlock {
+    width: 190px;
+}
+#blockVets {
+    margin-bottom: 0px;
+}
+
+input[type="checkbox"] {
+float: right;
+margin-left: 10px;
+box-shadow: none;
+margin-top: 0px;
+}
+/* Control Format */
+#summary_btnCreateNewAccount {
+    background-color: #FFE19D !important;
+}
+#content_txtCity {
+    width: 244px;
+}
+#lblVets {
+    border-right: none !important;
+    margin-right: 500px;
+    border-bottom: solid thin #BDD684 !important;
+}
+#txtEmail {
+    width: 300px;
+}
+#lblSameVet {
+    display: block;
+    width: 205px;
+    margin-right: 500px;
+    margin-bottom: 3%;
+}
+#txtPostal {
+    width: 74px !important;
+}
+
+#btnCancel{
+    background: none;
+    text-decoration: underline;
+    border: none;
+    box-shadow: none;
+    color: white; 
+    margin-left: 10px;
+}
+
+.createButtons {
+    font-weight: bolder;
+    padding: 6px;
+    background-color: #BDD684;
+    margin-bottom: 2%;
+}
+
+.createNewAccount {
+    font-weight: bolder;
+    padding: 6px;
+    background-color: #FFE19D !important;
+    margin-bottom: 2%;
+}
+
+.secondaryButtons {
+    margin-top: 0px !important;
+}
+input[type="checkbox"] {
+    width: 15px;
+    height: 22px;
+}
+
+#content_lblInformation {
+    display: inline-block;
+}

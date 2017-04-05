@@ -1,0 +1,74 @@
+﻿body {
+
+}
+h1 {
+    text-align: center;
+}
+#login {
+    margin: 10% auto;
+     background-color: rgba(16, 34, 43, 0.7) !important;
+     color: white;
+     padding: 10px;
+     border-radius: 10px;
+     box-shadow: 5px 5px 6px black;
+     width: 410px;
+}
+#lBtnCreateAccount {
+    color: #BDD684;
+}
+#lBtnCreateAccount:hover {
+    color: #BDD684;
+}
+#lBtnCreateAccountBlock {
+    margin-top: 0px;
+}
+#lblCreateAccountBlock {
+    margin-bottom: 0px;
+}
+#loginInfo {
+    width: 50%;
+    margin: 0 auto;
+}
+input {
+    color: black;
+}
+
+table {
+ 
+}
+#Login_LoginButton {
+    border: none;
+    background: #BDD684;
+    color: rgba(16, 34, 43, 0.7);
+}
+
+#lblUser{
+    font-size: 1.4em;
+}
+#logo {
+    float: none;
+}
+
+p {
+    margin-left: 10px;
+}
+td {
+    padding: 10px;
+}
+
+.btn {
+    background-color: #BDD684;
+    border: solid thin rgba(16, 34, 43, 1);
+    color: black;
+    text-decoration: none;
+}
+
+#btnLogin {
+    margin-left: 121px;
+    margin-bottom: 10%;
+}
+.btn:hover {
+    background-color: #E2F0D6;
+    color: black;
+      border: solid thin rgba(16, 34, 43, 1);
+}
