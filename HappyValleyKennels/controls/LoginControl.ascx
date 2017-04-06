@@ -20,10 +20,3 @@
                 </div>
         </div>
 
-<asp:GridView ID="gvEmail" Visible="false" runat="server" AutoGenerateColumns="False" DataSourceID="dsEmail">
-    <Columns>
-        <asp:BoundField DataField="OWNER_EMAIL" HeaderText="OWNER_EMAIL" SortExpression="OWNER_EMAIL" />
-    </Columns>
-</asp:GridView>
-
-
