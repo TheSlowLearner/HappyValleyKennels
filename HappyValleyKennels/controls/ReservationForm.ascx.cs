@@ -38,6 +38,11 @@ namespace HappyValleyKennels.controls
                 reservation = (Reservation)Session["Reservation"];
                 PetReservation petRes = new PetReservation();
                 reservation.petReservation = petRes.getPetReservations(reservation.reservationNumber);
+                if (newUser.user == userType.Clerk)
+                {
+                    addPetPanels();
+                    populateOwnerInformation();
+                }
                 displayUpdateButtons();
             }
             else

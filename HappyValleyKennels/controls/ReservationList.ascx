@@ -46,24 +46,40 @@
     </Columns>
 </asp:GridView>
 
-<asp:GridView ID="gvAllRes"  CssClass="summaryTables" runat="server" AutoGenerateColumns="False" DataSourceID="odsAllRes">
+<asp:GridView ID="gvAllRes"  CssClass="summaryTables" DataKeyNames="reservationNumber" runat="server" AutoGenerateColumns="False" DataSourceID="odsAllRes" OnSelectedIndexChanged="gvAllRes_SelectedIndexChanged" AllowPaging="True">
     <Columns>
         <asp:TemplateField ShowHeader="False">
             <ItemTemplate>
                 <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Edit Reservation"></asp:LinkButton>
             </ItemTemplate>
         </asp:TemplateField>
-        <asp:TemplateField HeaderText="reservationNumber" SortExpression="reservationNumber">
+        <asp:TemplateField HeaderText="Owner Name">
             <EditItemTemplate>
                 <asp:TextBox ID="Textbox1" runat="server" Text='<%# Bind("reservationNumber") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label1" runat="server" Text='<%# Bind("reservationNumber") %>'></asp:Label>
+                <asp:Label ID="Label1" runat="server" Text='<%# getOwnerName(Convert.ToInt16(Eval("reservationNumber").ToString())) %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
-        <asp:BoundField DataField="reservationStartDate" HeaderText="Start Date" SortExpression="reservationStartDate" />
-        <asp:BoundField DataField="reservationEndDate" HeaderText="End Date" SortExpression="reservationEndDate" />
+        <asp:TemplateField HeaderText="Start Date" SortExpression="reservationStartDate">
+            <EditItemTemplate>
+                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("reservationStartDate") %>'></asp:TextBox>
+            </EditItemTemplate>
+            <ItemTemplate>
+                <asp:Label ID="Label2" runat="server" Text='<%#  Eval("reservationStartDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        <asp:TemplateField HeaderText="End Date" SortExpression="reservationEndDate">
+            <EditItemTemplate>
+                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("reservationEndDate") %>'></asp:TextBox>
+            </EditItemTemplate>
+            <ItemTemplate>
+                <asp:Label ID="Label3" runat="server" Text='<%# Eval("reservationEndDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+        
     </Columns>
+    <PagerSettings Mode="NextPreviousFirstLast" />
 </asp:GridView>
 
 

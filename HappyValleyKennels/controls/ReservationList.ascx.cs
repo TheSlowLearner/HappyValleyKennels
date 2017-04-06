@@ -11,29 +11,24 @@ namespace HappyValleyKennels.controls
     public partial class ReservationList : System.Web.UI.UserControl
     {
         public List<Reservation> reservations { get; set; }
-
+        public User user { get; set; }
         public Owner owner { get; set; }
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["reservation"] != null)
-            {
-                ContentPlaceHolder content = (ContentPlaceHolder)Page.Master.FindControl("content");
-                ReservationForm reservationForm = (ReservationForm)content.FindControl("ReservationForm");
 
-                Reservation chosenReservation = (Reservation)Session["reservation"];
-                Panel mainContent = (Panel)content.FindControl("mainContent");
-                reservationForm.reservation = chosenReservation;
-                reservationForm.owner = owner;
-                Session["Reservation"] = chosenReservation;
-                reservationForm.fillInformation(chosenReservation);
-                mainContent.CssClass = mainContent.CssClass.Replace("contentPetList", "");
-                reservationForm.Visible = true;
-                this.Visible = false;
-
-            }
             if (((User)Session["user"]).user== userType.Clerk)
+            {
                 lblHeaderSummary.Text = "All Reservations";
+                gvResList.Visible = false;
+                gvAllRes.Visible = true;
+            }
+            else
+            {
+                lblHeaderSummary.Text = "My Reservations";
+                gvAllRes.Visible = false;
+                gvResList.Visible = true;
+            }
         }
 
         public String getPets(int resNum)
@@ -50,7 +45,9 @@ namespace HappyValleyKennels.controls
 
         public String getOwnerName(int resNum)
         {
-            return "";
+            Owner owner = new Owner();
+            owner = owner.getOwnerByReservation(resNum);
+            return owner.ownerFirstName + " " + owner.ownerLastName;
         }
 
         private Reservation getChosenReservation(int resNum)
@@ -77,10 +74,31 @@ namespace HappyValleyKennels.controls
             reservationForm.owner = owner;
             Session["Reservation"] = chosenReservation;
             reservationForm.fillInformation(chosenReservation);
-            mainContent.CssClass = mainContent.CssClass.Replace("contentPetList", "");
+            mainContent.CssClass = mainContent.CssClass.Replace("contentResList", "");
             reservationForm.Visible = true;
             this.Visible = false;
 
+        }
+
+        protected void gvAllRes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            ContentPlaceHolder content = (ContentPlaceHolder)Page.Master.FindControl("content");
+            ReservationForm reservationForm = (ReservationForm)content.FindControl("ReservationForm");
+
+            Reservation chosenReservation = getChosenReservation(Convert.ToInt32(gvAllRes.SelectedDataKey.Value.ToString()));
+            Panel mainContent = (Panel)content.FindControl("mainContent");
+            reservationForm.reservation = chosenReservation;
+            owner = new Owner();
+            owner = owner.getOwnerByReservation(Convert.ToInt32(gvAllRes.SelectedDataKey.Value.ToString()));
+            Pet pet = new Pet();
+            owner.ownerPet = pet.getPetByOwner(owner.ownerNumber);
+            reservationForm.owner = owner;
+            chosenReservation.owner = owner;
+            Session["Reservation"] = chosenReservation;
+            reservationForm.fillInformation(chosenReservation);
+            mainContent.CssClass = mainContent.CssClass.Replace("contentResList", "");
+            reservationForm.Visible = true;
+            this.Visible = false;
         }
     }
 }
