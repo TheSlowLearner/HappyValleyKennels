@@ -33,7 +33,7 @@ namespace HappyValleyKennels.controls
                 case (userType.Client):
                     owner = owner.getOwner(txtEmail.Text);
 
-                    if (owner != null)
+                    if (owner.ownerNumber!=0)
                     {
 
                         Pet pet = new Pet();
