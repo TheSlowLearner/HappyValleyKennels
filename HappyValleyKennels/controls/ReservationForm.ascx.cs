@@ -38,8 +38,8 @@ namespace HappyValleyKennels.controls
                 PetReservation petRes = new PetReservation();
                 reservation.petReservation = petRes.getPetReservations(reservation.reservationNumber);
 
-                foreach(PetReservation pr in reservation.petReservation)
-                    ServiceAccordion.a
+                foreach (PetReservation pr in reservation.petReservation)
+                    lblPets.Text += pr.pet.petName;
             }
         }
         protected void Page_PreRender(object sender, EventArgs e)
