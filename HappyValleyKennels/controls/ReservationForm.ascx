@@ -36,7 +36,7 @@
                         <asp:CustomValidator ID="valStartDateFormat" runat="server" ErrorMessage="*The start date must be a date" Display="Dynamic" Text="*" CssClass="errors" EnableClientScript="false" ControlToValidate="txtStartDate" OnServerValidate="valDateFormat_ServerValidate"></asp:CustomValidator>
                         <asp:CustomValidator ID="valStartDateFuture" runat="server" ErrorMessage="*The start date cannot be in the past" Display="Dynamic" CssClass="errors" Text="*" EnableClientScript="false" ControlToValidate="txtStartDate" OnServerValidate="valStartDateFuture_ServerValidate"></asp:CustomValidator>
                     </asp:Label>
-                    <asp:TextBox placeholder="mm/dd/yyyy" CssClass="form-control dateBoxes dateUI" ID="txtStartDate" runat="server"></asp:TextBox>
+                    <asp:TextBox placeholder="mm/dd/yyyy" ClientIDMode="Static" CssClass="form-control dateBoxes dateUI" ID="txtStartDate" runat="server"></asp:TextBox>
                 </div>
 
                 <div id="endBlock" class="dateBlocks">
@@ -44,7 +44,7 @@
                         <asp:RequiredFieldValidator ID="valEndDateRequired" runat="server" ErrorMessage="*Please enter a end date" CssClass="errors" Text="*" Display="Dynamic" Font-Overline="False" EnableClientScript="False" ControlToValidate="txtEndDate"></asp:RequiredFieldValidator>
                         <asp:CustomValidator ID="valEndDateFormat" runat="server" ErrorMessage="The end date must be a date" Display="Dynamic" Text="*" CssClass="errors" EnableClientScript="false" ControlToValidate="txtEndDate" OnServerValidate="valDateFormat_ServerValidate"></asp:CustomValidator>
                     </asp:Label>
-                    <asp:TextBox placeholder="mm/dd/yyyy" CssClass=" form-control dateBoxes dateUI" ID="txtEndDate"  runat="server" ></asp:TextBox>
+                    <asp:TextBox placeholder="mm/dd/yyyy" ClientIdMode="static" CssClass=" form-control dateBoxes dateUI" ID="txtEndDate"  runat="server" ></asp:TextBox>
                 </div>
 
             </div>

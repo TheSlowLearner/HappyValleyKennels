@@ -38,6 +38,11 @@ namespace HappyValleyKennels.controls
                 reservation = (Reservation)Session["Reservation"];
                 PetReservation petRes = new PetReservation();
                 reservation.petReservation = petRes.getPetReservations(reservation.reservationNumber);
+                displayUpdateButtons();
+            }
+            else
+            {
+                displayCreateButtons();
             }
         }
         protected void Page_PreRender(object sender, EventArgs e)
@@ -249,8 +254,6 @@ namespace HappyValleyKennels.controls
         {
             Page.Title = "Manage Reservation";
             //disabled buttons
-            btnEdit.Visible = false;
-            btnCancel.Visible = false;
         }
 
         public void fillInformation(Reservation currentRes)
@@ -269,6 +272,32 @@ namespace HappyValleyKennels.controls
 
         }
 
+        private void displayUpdateButtons()
+        {
+            btnCancel.Visible = true;
+            btnMakeRes.Visible = false;
+            btnUpdateRes.Visible = true;
+            btnEdit.Visible = false;
+            btnAddPet.Visible = true;
+        }
+
+        private void displayEditButtons()
+        {
+            btnCancel.Visible = true;
+            btnMakeRes.Visible = false;
+            btnUpdateRes.Visible = false;
+            btnEdit.Visible = true;
+            btnAddPet.Visible = false;
+        }
+
+        private void displayCreateButtons()
+        {
+            btnCancel.Visible = true;
+            btnMakeRes.Visible = true;
+            btnUpdateRes.Visible = false;
+            btnEdit.Visible = false;
+            btnAddPet.Visible = true;
+        }
         private void populateOwnerInformation()
         {
             lblName.Text += owner.ownerFirstName + " " + owner.ownerLastName;

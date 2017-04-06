@@ -98,10 +98,12 @@ namespace HappyValleyKennels.controls
                 if (owner.ownerPet.Count != 0)
                 {
                     checkSavedReservationProgress();
+                    displayCreateButtons();
                 }
                 else
                 {
                     displayForm();
+                    displayEditButtons();
                 }
             }
         }
