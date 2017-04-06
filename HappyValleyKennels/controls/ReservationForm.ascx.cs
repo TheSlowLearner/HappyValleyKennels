@@ -157,31 +157,6 @@ namespace HappyValleyKennels.controls
             }
         }
 
-        private int getReservationDuration()
-        {
-            int duration = 0;
-            if (txtStartDate.Text != "" && txtEndDate.Text != "")
-            {
-                try
-                {
-                    DateTime start = Convert.ToDateTime(txtStartDate.Text);
-                    DateTime end = Convert.ToDateTime(txtEndDate.Text);
-
-                    if (end > start)
-                    {
-                        duration = (end - start).Days;
-                    }
-                }
-                catch
-                {
-
-                }
-            }
-
-            return duration;
-        }
-
-
         private AccordionPane getPane(String petNumber)
         {
             AccordionPane pane = (AccordionPane)ServiceAccordion.FindControl("Pet" + petNumber);
@@ -260,8 +235,8 @@ namespace HappyValleyKennels.controls
         {
             for (int i = 0; i < currentRes.petReservation.Count; i++)
             {
-                txtStartDate.Text = currentRes.reservationStartDate.ToShortDateString();
-                txtEndDate.Text = currentRes.reservationEndDate.ToShortDateString();
+                txtStartDate.Text = currentRes.reservationStartDate.ToString("MM/dd/yyyy");
+                txtEndDate.Text = currentRes.reservationEndDate.ToString("MM/dd/yyyy");
                 PetReservation currentPetReservation = currentRes.petReservation.ElementAt(i);
                 setServices(currentPetReservation.petReservationService, currentPetReservation.pet);
             }
@@ -349,6 +324,7 @@ namespace HappyValleyKennels.controls
 
         private void registerReservationInformation()
         {
+            enableFields();
             DateTime start = DateTime.Now;
             DateTime end = DateTime.Now.AddDays(7);
 
@@ -362,10 +338,10 @@ namespace HappyValleyKennels.controls
                 end = Convert.ToDateTime(txtEndDate.Text);
             }
 
-            Reservation res = new Reservation(1000, start, end);
-            res.owner = owner;
-            getPetReservations(res);
-            saveReservationInformation(res);
+            reservation = new Reservation(1000, start, end);
+            reservation.owner = owner;
+            getPetReservations(reservation);
+            saveReservationInformation(reservation);
         }
 
         private void getPetReservations(Reservation newReservation)
@@ -459,31 +435,6 @@ namespace HappyValleyKennels.controls
             // displaySummary();
         }
 
-        protected void editReservation_Click(object sender, EventArgs e)
-        {
-            fillInformation(reservation);
-            //  displayContent();
-            enableFields();
-            btnAddPet.Visible = false;
-            btnUpdateRes.Visible = true;
-            btnAddPet.Visible = true;
-            btnCancel.Visible = true;
-            btnMakeRes.Visible = false;
-            btnCancel.Text = "Cancel";
-        }
-
-        protected void viewReservation_Click(object sender, EventArgs e)
-        {
-            fillInformation(reservation);
-            //   displayContent();
-            btnAddPet.Visible = false;
-            btnUpdateRes.Visible = false;
-            btnEdit.Visible = true;
-            btnCancel.Visible = true;
-            btnMakeRes.Visible = false;
-            btnCancel.Text = "View Summary";
-            disableFields();
-        }
 
         protected void btnAddPet_Click(object sender, EventArgs e)
         {
@@ -554,5 +505,6 @@ namespace HappyValleyKennels.controls
 
             }
         }
+
     }
 }
