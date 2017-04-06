@@ -73,54 +73,58 @@ namespace HappyValleyKennels.controls
 
         private void addPetPanels()
         {
-            List<Pet> pets = owner.ownerPet;
-            for (int i = 0; i < pets.Count; i++)
+            if (owner != null)
             {
 
-                Pet currentPet = pets.ElementAt(i);
-                AccordionPane panel = new AccordionPane();
-
-                //setup header
-                CheckBox currentPetCheck = new CheckBox();
-                currentPetCheck.ID = "chkName" + currentPet.petNumber;
-                currentPetCheck.CssClass = "nameCheckboxes";
-                currentPetCheck.AutoPostBack = true;
-                currentPetCheck.CheckedChanged += checkPet;
-                currentPetCheck.ClientIDMode = ClientIDMode.AutoID;
-                currentPetCheck.Text = currentPet.petName;
-                panel.HeaderContainer.Controls.Add(currentPetCheck);
-
-                //setup panel attributes
-                panel.ID = "Pet" + currentPet.petNumber;
-                panel.CssClass = "panels";
-
-                //create pet reservation control
-                PetReservationPanel newPetPanel = (PetReservationPanel)LoadControl("~/controls/PetReservationPanel.ascx");
-                newPetPanel.ID = "petPanel" + currentPet.petNumber;
-                newPetPanel.pet = currentPet;
-
-                if (reservation != null)
+                List<Pet> pets = owner.ownerPet;
+                for (int i = 0; i < pets.Count; i++)
                 {
-                    newPetPanel = setPetReservation(currentPet.petNumber.ToString(), newPetPanel);
-                }
 
-                if (newPetPanel.petReservation != null)
-                {
-                    if (newPetPanel.petReservation.petReservationService.Count > 0)
+                    Pet currentPet = pets.ElementAt(i);
+                    AccordionPane panel = new AccordionPane();
+
+                    //setup header
+                    CheckBox currentPetCheck = new CheckBox();
+                    currentPetCheck.ID = "chkName" + currentPet.petNumber;
+                    currentPetCheck.CssClass = "nameCheckboxes";
+                    currentPetCheck.AutoPostBack = true;
+                    currentPetCheck.CheckedChanged += checkPet;
+                    currentPetCheck.ClientIDMode = ClientIDMode.AutoID;
+                    currentPetCheck.Text = currentPet.petName;
+                    panel.HeaderContainer.Controls.Add(currentPetCheck);
+
+                    //setup panel attributes
+                    panel.ID = "Pet" + currentPet.petNumber;
+                    panel.CssClass = "panels";
+
+                    //create pet reservation control
+                    PetReservationPanel newPetPanel = (PetReservationPanel)LoadControl("~/controls/PetReservationPanel.ascx");
+                    newPetPanel.ID = "petPanel" + currentPet.petNumber;
+                    newPetPanel.pet = currentPet;
+
+                    if (reservation != null)
                     {
-                        currentPetCheck.Checked = true;
-                        newPetPanel.enable();
+                        newPetPanel = setPetReservation(currentPet.petNumber.ToString(), newPetPanel);
                     }
-                }
-                else
-                {
-                    newPetPanel.disable();
-                }
-                //add controls
-                panel.ContentContainer.ID = "content" + currentPet.petNumber;
-                panel.ContentContainer.Controls.Add(newPetPanel);
 
-                ServiceAccordion.Panes.Add(panel);
+                    if (newPetPanel.petReservation != null)
+                    {
+                        if (newPetPanel.petReservation.petReservationService.Count > 0)
+                        {
+                            currentPetCheck.Checked = true;
+                            newPetPanel.enable();
+                        }
+                    }
+                    else
+                    {
+                        newPetPanel.disable();
+                    }
+                    //add controls
+                    panel.ContentContainer.ID = "content" + currentPet.petNumber;
+                    panel.ContentContainer.Controls.Add(newPetPanel);
+
+                    ServiceAccordion.Panes.Add(panel);
+                }
             }
         }
 

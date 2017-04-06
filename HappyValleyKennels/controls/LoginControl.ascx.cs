@@ -27,6 +27,8 @@ namespace HappyValleyKennels.controls
             {
 
                 case (userType.Clerk):
+                    Reservation res = new Reservation();
+                    Session["Reservations"] = res.listAllReservations();
                     Response.Redirect("./home.aspx");
                     break;
 
@@ -40,8 +42,8 @@ namespace HappyValleyKennels.controls
                         List<Pet> ownerPets = new List<Pet>();
                         ownerPets = pet.getPetByOwner(owner.ownerNumber);
                         owner.ownerPet = ownerPets;
-                        Reservation res = new Reservation();
-                        List<Reservation> ownerReservations = res.listReservations(owner.ownerNumber);
+                        Reservation reservation = new Reservation();
+                        List<Reservation> ownerReservations = reservation.listReservations(owner.ownerNumber);
 
                         Session["Owner"] = owner;
                         Session["OwnerNumber"] = owner.ownerNumber;

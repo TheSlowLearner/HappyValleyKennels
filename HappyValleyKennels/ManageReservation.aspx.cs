@@ -37,6 +37,7 @@ namespace HappyValleyKennels
             if (Session["User"] != null)
             {
                 newUser = (User)Session["User"];
+
                 if (newUser.user == userType.Clerk)
                 {
                     ReservationForm.displayReservationList();
