@@ -111,6 +111,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="controls\CustomerForm.ascx" />
     <Content Include="controls\CustomerHomePage.ascx" />
     <Content Include="controls\OwnerList.ascx" />
     <Content Include="controls\LoginControl.ascx" />
@@ -157,6 +158,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="controls\CustomerForm.ascx.cs">
+      <DependentUpon>CustomerForm.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="controls\CustomerForm.ascx.designer.cs">
+      <DependentUpon>CustomerForm.ascx</DependentUpon>
+    </Compile>
     <Compile Include="controls\CustomerHomePage.ascx.cs">
       <DependentUpon>CustomerHomePage.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

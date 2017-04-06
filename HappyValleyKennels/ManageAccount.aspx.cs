@@ -17,47 +17,57 @@ namespace HappyValleyKennels
         private void Page_Load(object sender, EventArgs e)
         {
             checkUserType();
-              if (owner.ownerNumber != 0)
-                lblHeader.Text = "Manage Account";
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            checkOwnerSession();
-            ContentPlaceHolder summary = (ContentPlaceHolder)this.Master.FindControl("summary");
-            if (summary.Visible == true)
+            if(Session["User"] != null)
             {
-                displaySummary();
+                newUser = (User)Session["User"];
+            }
+            if(newUser.user == userType.Client)
+            {
+                checkOwnerSession();
+                ContentPlaceHolder summary = (ContentPlaceHolder)this.Master.FindControl("summary");
+                if (summary.Visible == true)
+                {
+                    displaySummary();
+                }
             }
         }
 
         private void checkOwnerSession()
         {
-            if (Session["Owner"] == null)
+            if (newUser.user == userType.Client)
             {
-                //if there's no owner session then it means it is a new owner signing up
-                Panel banner = (Panel)Master.FindControl("wrapper");
-                banner.Visible = false;
-                displayContent();
-                enableFields();
-                displayCreateButtons();
-                owner = new Owner();
-                //   fillInformation(owner);
 
-            }
-            else
-            {
-                Page.Title = "My Account";
-                //otherwise it is a returning owner so display the banner and their information
-                owner = (Owner)Session["owner"];
-                if (!IsPostBack)
+
+                if (Session["Owner"] == null)
                 {
-
-                    fillInformation(owner);
-                    disableFields();
+                    //if there's no owner session then it means it is a new owner signing up
+                    Panel banner = (Panel)Master.FindControl("wrapper");
+                    banner.Visible = false;
+                    displayContent();
+                    enableFields();
+                    displayCreateButtons();
+                    owner = new Owner();
+                    //   fillInformation(owner);
                 }
-                btnCreateAccount.Visible = false;
-                disablePasswords();
+                else
+                {
+                    lblHeader.Text = "Manage Account";
+                    //otherwise it is a returning owner so display the banner and their information
+                    owner = (Owner)Session["owner"];
+                    if (!IsPostBack)
+                    {
+
+                        fillInformation(owner);
+                        disableFields();
+                    }
+                    btnCreateAccount.Visible = false;
+                    disablePasswords();
+
+                }
             }
         }
 
