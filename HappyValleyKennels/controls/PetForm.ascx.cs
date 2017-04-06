@@ -625,6 +625,9 @@ namespace HappyValleyKennels.controls
             btnAddNewPet.Visible = false;
             btnAddPet.Visible = true;
             btnCancel.Visible = true;
+            
+            if (lblHeader.Text == "Add a Pet")
+                btnEdit.Visible = false;
         }
         private void displayUpdateButtons()
         {
