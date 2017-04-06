@@ -51,7 +51,7 @@ namespace HappyValleyKennels
                 }
                 else if (newUser.user == userType.Clerk)
                 {
-                    if(owner.ownerPet.Count == 0)
+                    if (owner.ownerPet.Count == 0)
                     {
                         if (!IsPostBack)
                         {
@@ -60,7 +60,7 @@ namespace HappyValleyKennels
                     }
                     else
                     {
-                        if(makingReservation == false)
+                        if (makingReservation == false)
                         {
                             if (!IsPostBack)
                             {
@@ -74,7 +74,7 @@ namespace HappyValleyKennels
 
         private void checkOwnerSession()
         {
-            
+
             if (Session["Owner"] != null)
             {
 
@@ -101,7 +101,7 @@ namespace HappyValleyKennels
             if (Session["MakingReservation"] != null)
             {
                 makingReservation = (Boolean)Session["MakingReservation"];
-                   
+
                 if (makingReservation == true)
                 {
                     if (!IsPostBack)

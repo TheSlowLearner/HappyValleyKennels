@@ -13,12 +13,10 @@ namespace HappyValleyKennels
     {
         private User newUser;
         private Owner owner;
-        
+
         private void Page_Load(object sender, EventArgs e)
         {
-            
             checkUserType();
-            
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
@@ -30,6 +28,7 @@ namespace HappyValleyKennels
                 displaySummary();
             }
         }
+
         private void checkOwnerSession()
         {
             if (Session["Owner"] == null)
@@ -37,15 +36,9 @@ namespace HappyValleyKennels
                 //if there's no owner session then it means it is a new owner signing up
                 Panel banner = (Panel)Master.FindControl("wrapper");
                 banner.Visible = false;
-                btnCancel.Visible = false;
                 displayContent();
                 enableFields();
-                btnUpdateOwner.Visible = false;
-                btnUpdateOwner.Enabled = false;
-                btnCreateAccount.Visible = true;
-                btnCreateAccount.Enabled = true;
-                btnCancel.Enabled = false;
-                btnCancel.Visible = false;
+                displayCreateButtons();
                 owner = new Owner();
                 //   fillInformation(owner);
 
@@ -61,7 +54,6 @@ namespace HappyValleyKennels
                     fillInformation(owner);
                     disableFields();
                 }
-                btnEdit.Visible = true;
                 btnCreateAccount.Visible = false;
                 disablePasswords();
             }
@@ -175,7 +167,7 @@ namespace HappyValleyKennels
             }
 
             setownerInformation(18, 1000, currentPets);
-                Session["owner"] = owner;
+            Session["owner"] = owner;
         }
 
         private void setownerInformation(int ownerNumber, int vetNumber, List<Pet> currentPets)
@@ -223,7 +215,7 @@ namespace HappyValleyKennels
                     }
                     else
                     {
-                        if(Session["Owner"] == null)
+                        if (Session["Owner"] == null)
                         {
                             enableFields();
                         }
@@ -269,13 +261,10 @@ namespace HappyValleyKennels
             Session["CheckingownerPet"] = true;
             Server.Transfer("./ManagePet.aspx");
         }
-        
+
         protected void btnCancel_Click(object sender, EventArgs e)
         {
-            btnCreateAccount.Visible = false;
-            btnUpdateOwner.Visible = false;
-            btnCancel.Visible = false;
-            btnEdit.Visible = true;
+            displayEditButtons();
 
             if (newUser.user == userType.Clerk)
             {
@@ -286,9 +275,7 @@ namespace HappyValleyKennels
             {
                 disableFields();
                 cancelChanges();
-                btnCreateAccount.Visible = false;
-                btnCancel.Visible = false;
-                btnEdit.Visible = true;
+                displayEditButtons();
                 lblHeader.Text = "Account Information";
             }
         }
@@ -306,26 +293,43 @@ namespace HappyValleyKennels
                 }
                 else
                 {
-                    btnUpdateOwner.Visible = false;
-                    btnCancel.Visible = false;
-                    btnEdit.Visible = true;
+                    displayEditButtons();
                     lblHeader.Text = "Account Information";
                 }
             }
 
         }
 
+        private void displayUpdateButtons()
+        {
+            btnUpdateOwner.Visible = true;
+            btnCancel.Visible = true;
+            btnEdit.Visible = false;
+            btnCreateAccount.Visible = false;
+        }
+
+        private void displayEditButtons()
+        {
+            btnUpdateOwner.Visible = false;
+            btnCancel.Visible = true;
+            btnEdit.Visible = true;
+            btnCreateAccount.Visible = false;
+
+        }
+
+        private void displayCreateButtons()
+        {
+            btnUpdateOwner.Visible = false;
+            btnCancel.Visible = false;
+            btnEdit.Visible = false;
+            btnCreateAccount.Visible = true;
+        }
+
         protected void btnEdit_Click(object sender, EventArgs e)
         {
             enableFields();
 
-            //disabled buttons
-            btnEdit.Visible = false;
-
-            //enabled buttons
-            btnUpdateOwner.Visible = true;
-            btnCreateAccount.Visible = false;
-            btnCancel.Visible = true;
+            displayUpdateButtons();
 
             //changed headers and text
             lblHeader.Text = "Edit Account";
@@ -337,12 +341,7 @@ namespace HappyValleyKennels
             displayContent();
             clear();
             txtFirst.Focus();
-            //disabled buttons
-            btnEdit.Visible = false;
-            btnUpdateOwner.Visible = false;
-            //enabled buttons
-            btnCreateAccount.Visible = true;
-            btnCancel.Visible = true;
+            displayCreateButtons();
 
             //changed text
             lblHeader.Text = "Create Account";
