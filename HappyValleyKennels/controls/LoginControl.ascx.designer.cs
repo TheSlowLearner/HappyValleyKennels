@@ -94,15 +94,6 @@ namespace HappyValleyKennels.controls {
         protected global::System.Web.UI.WebControls.LinkButton lBtnCreateAccount;
         
         /// <summary>
-        /// dsEmail control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource dsEmail;
-        
-        /// <summary>
         /// gvEmail control.
         /// </summary>
         /// <remarks>

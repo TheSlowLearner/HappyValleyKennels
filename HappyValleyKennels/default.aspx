@@ -13,7 +13,7 @@
     <link href="styles/default.css" rel="stylesheet" />
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="loginForm" runat="server">
     <div>
         <uc1:LoginControl runat="server" ID="LoginControl" />
     </div>

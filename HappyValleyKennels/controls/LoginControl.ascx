@@ -19,14 +19,6 @@
                 <p id="lBtnCreateAccountBlock"><asp:LinkButton ID="lBtnCreateAccount" runat="server" OnClick="lBtnCreateAccount_Click">create one now!</asp:LinkButton></p>
                 </div>
         </div>
-<asp:SqlDataSource ID="dsEmail" runat="server"
-    ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
-    ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>"
-     SelectCommand="SELECT OWNER_EMAIL FROM HVK_OWNER WHERE (OWNER_EMAIL = :OWNER_EMAIL)">
-    <SelectParameters>
-        <asp:ControlParameter ControlID="txtEmail" Name="OWNER_EMAIL" PropertyName="Text" Type="String" />
-    </SelectParameters>
-</asp:SqlDataSource>
 
 <asp:GridView ID="gvEmail" Visible="false" runat="server" AutoGenerateColumns="False" DataSourceID="dsEmail">
     <Columns>
