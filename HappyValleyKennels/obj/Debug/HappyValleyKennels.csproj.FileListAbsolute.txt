@@ -189,7 +189,6 @@ C:\Users\1464952\Source\Repos\HappyValleyKennels\HappyValleyKennels\obj\Debug\Ha
 C:\Users\1464952\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll.config
 C:\Users\1464952\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.dll
 C:\Users\1464952\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\HappyValleyKennels.pdb
-C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.csprojResolveAssemblyReference.cache
 C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\ApplicationInsights.config
 C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\roslyn\csc.exe
 C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
@@ -227,3 +226,4 @@ C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.
 C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.dll
 C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.pdb
+C:\Users\berub\Source\Repos\HappyValleyKennels\HappyValleyKennels\obj\Debug\HappyValleyKennels.csprojResolveAssemblyReference.cache

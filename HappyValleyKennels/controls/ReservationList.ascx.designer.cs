@@ -22,6 +22,15 @@ namespace HappyValleyKennels.controls {
         protected global::System.Web.UI.WebControls.ObjectDataSource odsReservations;
         
         /// <summary>
+        /// odsAllRes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ObjectDataSource odsAllRes;
+        
+        /// <summary>
         /// lblHeaderSummary control.
         /// </summary>
         /// <remarks>
@@ -38,5 +47,14 @@ namespace HappyValleyKennels.controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.GridView gvResList;
+        
+        /// <summary>
+        /// gvAllRes control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.GridView gvAllRes;
     }
 }

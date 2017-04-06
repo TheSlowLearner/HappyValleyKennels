@@ -13,7 +13,6 @@
             <asp:Label ID="lblHeader" runat="server" Text="Create Account"></asp:Label>
         </h1>
 
-        <uc1:OwnerList runat="server" ID="OwnerList1" />
         <asp:ValidationSummary runat="server" CssClass="validationSummary" DisplayMode="List"></asp:ValidationSummary>
         <asp:Panel ID="wrapper" runat="server">
             <h3>Owner</h3>

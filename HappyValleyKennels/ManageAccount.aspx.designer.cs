@@ -490,6 +490,15 @@ namespace HappyValleyKennels {
         protected global::System.Web.UI.WebControls.TextBox txtEmergPhone;
         
         /// <summary>
+        /// blockButtons control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl blockButtons;
+        
+        /// <summary>
         /// btnCreateAccount control.
         /// </summary>
         /// <remarks>
@@ -524,6 +533,15 @@ namespace HappyValleyKennels {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnCancel;
+        
+        /// <summary>
+        /// requiredInfo control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl requiredInfo;
         
         /// <summary>
         /// lblReqInfo control.

@@ -41,12 +41,11 @@ namespace HappyValleyKennels
                     Panel banner = (Panel)Master.FindControl("wrapper");
                     banner.Visible = false;
                     displayCreateButtons();
-                  
+                    displayContent();
+                    enableFields();
                 }
-                displayContent();
-                enableFields();
 
-                  
+
                 owner = new Owner();
                 //   fillInformation(owner);
 
@@ -76,13 +75,14 @@ namespace HappyValleyKennels
                 if (newUser.user == userType.Clerk)
                 {
                     wrapper.Visible = false;
+                    displaySummary();
                     blockButtons.Visible = false;
                     requiredInfo.Visible = false;
                 }
                 else if (newUser.user == userType.Client)
                 {
                     checkOwnerSession();
-                    OwnerList1.Visible = false;
+                    displayContent();
                     if (!IsPostBack)
                     {
                         displayContent();

@@ -29,7 +29,7 @@
     <hr />
 <asp:GridView ID="gvOwnerList" runat="server" CssClass="summaryTables" DataKeyNames="ownerNumber" AllowPaging="True" AutoGenerateColumns="False" DataSourceID="odsOwners" HorizontalAlign="Center" PageSize="5">
     <Columns>
-        <asp:CommandField ShowSelectButton="True" SelectText="View Pets" ShowEditButton="True" />
+        <asp:CommandField ShowSelectButton="True" SelectText="View Pets" />
         <asp:TemplateField HeaderText="First Name" SortExpression="ownerFirstName">
             <EditItemTemplate>
                 <asp:TextBox ID="TextBox4" runat="server" Text='<%# Bind("ownerFirstName") %>'></asp:TextBox>
@@ -160,7 +160,7 @@
                     <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("petBirthdate") %>'></asp:TextBox>
                 </EditItemTemplate>
                 <ItemTemplate>
-                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("petBirthdate", "{0}: dd MMMM, yyyy") %>'></asp:Label>
+                    <asp:Label ID="Label3" runat="server" Text='<%# Eval("petBirthdate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
                 </ItemTemplate>
             </asp:TemplateField>
             <asp:TemplateField HeaderText="Size" SortExpression="petSize">

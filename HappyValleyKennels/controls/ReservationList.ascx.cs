@@ -48,6 +48,11 @@ namespace HappyValleyKennels.controls
             return names;
         }
 
+        public String getOwnerName(int resNum)
+        {
+            return "";
+        }
+
         private Reservation getChosenReservation(int resNum)
         {
             for (int i = 0; i < reservations.Count; i++)
