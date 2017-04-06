@@ -12,11 +12,13 @@
             <asp:TextBox ID="txtPassword" CssClass="form-control" runat="server"></asp:TextBox>
             </p>
                 <asp:Button ID="btnLogin"  CssClass="btn btn-default" runat="server" Text="Log In" OnClick="btnLogin_Click" />
-                <asp:Label ID="lblInvalidLogin" CssClass="errors" runat="server" Text="Invalid email address"></asp:Label>
                 <p id="lblCreateAccountBlock"><asp:Label ID="lblCreateAccount" runat="server" Text="Don't have an account? ">
-                  
+                   <asp:Label ID="lblInvalidLogin" CssClass="errors" runat="server" Text="*Invalid email address"></asp:Label>
                 </asp:Label></p>
                 <p id="lBtnCreateAccountBlock"><asp:LinkButton ID="lBtnCreateAccount" runat="server" OnClick="lBtnCreateAccount_Click">create one now!</asp:LinkButton></p>
-                </div>
+               
+                 </div>
+                    
+
         </div>
 

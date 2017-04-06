@@ -19,6 +19,10 @@ h1 {
 #LoginControl_lBtnCreateAccount:hover {
     color: white;
 }
+#LoginControl_lblInvalidLogin {
+    color: #E2F0D6;
+    font-size: 1em;
+}
 #lBtnCreateAccountBlock {
     margin-top: 0px;
 }

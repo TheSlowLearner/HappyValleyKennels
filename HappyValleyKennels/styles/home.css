@@ -36,6 +36,15 @@ h3{
     color: #10222B;
 
 }
+td a{
+    color: white;
+}
+td a:hover {
+    color: white;
+}
+td a:active {
+    color: white;
+}
 #nameSearchBlock { 
     width: 200px;
     display: inline-block;

@@ -67,15 +67,6 @@ namespace HappyValleyKennels.controls {
         protected global::System.Web.UI.WebControls.Button btnLogin;
         
         /// <summary>
-        /// lblInvalidLogin control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblInvalidLogin;
-        
-        /// <summary>
         /// lblCreateAccount control.
         /// </summary>
         /// <remarks>
@@ -83,6 +74,15 @@ namespace HappyValleyKennels.controls {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label lblCreateAccount;
+        
+        /// <summary>
+        /// lblInvalidLogin control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lblInvalidLogin;
         
         /// <summary>
         /// lBtnCreateAccount control.
