@@ -32,6 +32,8 @@ namespace HappyValleyKennels.controls
                 this.Visible = false;
 
             }
+            if (((User)Session["user"]).user== userType.Clerk)
+                lblHeaderSummary.Text = "All Reservations";
         }
 
         public String getPets(int resNum)
