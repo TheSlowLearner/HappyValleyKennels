@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,63 +11,59 @@ namespace HappyValleyKennels
 {
     public partial class ManageAccount : System.Web.UI.Page
     {
-        private User newUser;
-        private Owner owner;
+        private User newUser = new User();
+        private Owner owner = new Owner();
 
         private void Page_Load(object sender, EventArgs e)
         {
             checkUserType();
+              if (owner.ownerNumber != 0)
+                lblHeader.Text = "Manage Account";
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
         {
-            if(Session["User"] != null)
+            checkOwnerSession();
+            ContentPlaceHolder summary = (ContentPlaceHolder)this.Master.FindControl("summary");
+            if (summary.Visible == true)
             {
-                newUser = (User)Session["User"];
-            }
-            if(newUser.user == userType.Client)
-            {
-                checkOwnerSession();
-                ContentPlaceHolder summary = (ContentPlaceHolder)this.Master.FindControl("summary");
-                if (summary.Visible == true)
-                {
-                    displaySummary();
-                }
+                displaySummary();
             }
         }
 
         private void checkOwnerSession()
         {
-            if (newUser.user == userType.Client)
+            if (Session["Owner"] == null)
             {
-
-
-                if (Session["Owner"] == null)
+                //if there's no owner session then it means it is a new owner signing up
+                if (newUser.user == userType.Client)
                 {
-                    //if there's no owner session then it means it is a new owner signing up
                     Panel banner = (Panel)Master.FindControl("wrapper");
                     banner.Visible = false;
-                    displayContent();
-                    enableFields();
                     displayCreateButtons();
-                    owner = new Owner();
-                    //   fillInformation(owner);
+                  
                 }
-                else
+                displayContent();
+                enableFields();
+
+                  
+                owner = new Owner();
+                //   fillInformation(owner);
+
+            }
+            else
+            {
+                Page.Title = "My Account";
+                //otherwise it is a returning owner so display the banner and their information
+                owner = (Owner)Session["owner"];
+                if (!IsPostBack)
                 {
-                    lblHeader.Text = "Manage Account";
-                    //otherwise it is a returning owner so display the banner and their information
-                    owner = (Owner)Session["owner"];
-                    if (!IsPostBack)
-                    {
 
-                        fillInformation(owner);
-                        disableFields();
-                    }
-                    btnCreateAccount.Visible = false;
-                    disablePasswords();
-
+                    fillInformation(owner);
+                    disableFields();
                 }
+                btnCreateAccount.Visible = false;
+                disablePasswords();
             }
         }
 
@@ -79,19 +75,14 @@ namespace HappyValleyKennels
                 newUser = (User)Session["User"];
                 if (newUser.user == userType.Clerk)
                 {
-                    displaySummary();
-                    Page.Title = "Manage Accounts";
-                    lblEmail.Text = "**Email";
-                    lblPhone.Text = "**Phone";
-                    lblHeader.Text = "Account Information";
-                    disablePasswords();
-                    valEmailRequireClerk.Enabled = true;
-                    valEmailRequiredClient.Enabled = false;
-                    valPhoneRequiredClerk.Enabled = true;
+                    wrapper.Visible = false;
+                    blockButtons.Visible = false;
+                    requiredInfo.Visible = false;
                 }
                 else if (newUser.user == userType.Client)
                 {
                     checkOwnerSession();
+                    OwnerList1.Visible = false;
                     if (!IsPostBack)
                     {
                         displayContent();
