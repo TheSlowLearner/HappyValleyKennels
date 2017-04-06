@@ -6,7 +6,15 @@
 .contentResList {
     width: 950px !important;
 }
-
+td a{
+    color: white;
+}
+td a:hover {
+    color: white;
+}
+td a:active {
+    color: white;
+}
 #blockButtons {
     margin: 1% 0;
 width: 46%;

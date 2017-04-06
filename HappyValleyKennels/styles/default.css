@@ -13,11 +13,11 @@ h1 {
      box-shadow: 5px 5px 6px black;
      width: 410px;
 }
-#lBtnCreateAccount {
-    color: #BDD684;
+#LoginControl_lBtnCreateAccount {
+    color: white;
 }
-#lBtnCreateAccount:hover {
-    color: #BDD684;
+#LoginControl_lBtnCreateAccount:hover {
+    color: white;
 }
 #lBtnCreateAccountBlock {
     margin-top: 0px;
@@ -32,7 +32,9 @@ h1 {
 input {
     color: black;
 }
-
+#LoginControl_lblCreateAccount {
+    color: #BDD684 !important;
+}
 table {
  
 }
@@ -63,8 +65,8 @@ td {
     text-decoration: none;
 }
 
-#btnLogin {
-    margin-left: 121px;
+#LoginControl_btnLogin {
+    margin-left: 130px;
     margin-bottom: 10%;
 }
 .btn:hover {

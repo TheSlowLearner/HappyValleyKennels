@@ -9,12 +9,11 @@
         </h3>
         <hr />
 
-
 <asp:GridView ID="gvResList" DataKeyNames="reservationNumber" EmptyDataText="You do not have any reservations yet" CssClass="summaryTables" runat="server" AutoGenerateColumns="False" DataSourceID="odsReservations" OnSelectedIndexChanged="gvOwnerReservations_SelectedIndexChanged">
     <Columns>
         <asp:TemplateField ShowHeader="False">
             <ItemTemplate>
-                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Select"></asp:LinkButton>
+                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Edit Reservation"></asp:LinkButton>
             </ItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Pets" SortExpression="reservationNumber">
