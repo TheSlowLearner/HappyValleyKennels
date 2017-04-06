@@ -16,31 +16,28 @@
     <Columns>
         <asp:TemplateField ShowHeader="False">
             <ItemTemplate>
-                <asp:LinkButton ID="LinkButton1" runat="server" CausesValidation="False" CommandName="Select" Text="Edit Reservation"></asp:LinkButton>
+                <asp:LinkButton ID="lbEdit" runat="server" CausesValidation="False" CommandName="Select" Text="Edit Reservation"></asp:LinkButton>
             </ItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Pets" SortExpression="reservationNumber">
             <EditItemTemplate>
-                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("reservationNumber") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label1" runat="server" Text='<%# getPets(Convert.ToInt32(Eval("reservationNumber").ToString())) %>'></asp:Label>
+                <asp:Label ID="lblPets" runat="server" Text='<%# getPets(Convert.ToInt32(Eval("reservationNumber").ToString())) %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Start Date" SortExpression="reservationStartDate">
             <EditItemTemplate>
-                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("reservationStartDate") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label2" runat="server" Text='<%# Eval("reservationStartDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
+                <asp:Label ID="lblStart" runat="server" Text='<%# Eval("reservationStartDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="End Date" SortExpression="reservationEndDate">
             <EditItemTemplate>
-                <asp:TextBox ID="TextBox3" runat="server" Text='<%# Bind("reservationEndDate") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label3" runat="server" Text='<%# Eval("reservationEndDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
+                <asp:Label ID="lblEnd" runat="server" Text='<%# Eval("reservationEndDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
     </Columns>
@@ -55,26 +52,31 @@
         </asp:TemplateField>
         <asp:TemplateField HeaderText="Owner Name">
             <EditItemTemplate>
-                <asp:TextBox ID="Textbox1" runat="server" Text='<%# Bind("reservationNumber") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label1" runat="server" Text='<%# getOwnerName(Convert.ToInt16(Eval("reservationNumber").ToString())) %>'></asp:Label>
+                <asp:Label ID="lblOwner" runat="server" Text='<%# getOwnerName(Convert.ToInt16(Eval("reservationNumber").ToString())) %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
-        <asp:TemplateField HeaderText="Start Date" SortExpression="reservationStartDate">
+                <asp:TemplateField HeaderText="Pets">
             <EditItemTemplate>
-                <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("reservationStartDate") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label2" runat="server" Text='<%#  Eval("reservationStartDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
+                <asp:Label ID="lblPets" runat="server" Text='<%# getPets(Convert.ToInt16(Eval("reservationNumber").ToString())) %>'></asp:Label>
+            </ItemTemplate>
+        </asp:TemplateField>
+
+        <asp:TemplateField HeaderText="Start Date" SortExpression="reservationStartDate">
+            <EditItemTemplate>
+            </EditItemTemplate>
+            <ItemTemplate>
+                <asp:Label ID="lblStart" runat="server" Text='<%#  Eval("reservationStartDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
         <asp:TemplateField HeaderText="End Date" SortExpression="reservationEndDate">
             <EditItemTemplate>
-                <asp:TextBox ID="TextBox2" runat="server" Text='<%# Bind("reservationEndDate") %>'></asp:TextBox>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label3" runat="server" Text='<%# Eval("reservationEndDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
+                <asp:Label ID="lblEnd" runat="server" Text='<%# Eval("reservationEndDate", "{0: dd MMMM, yyyy}") %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
         

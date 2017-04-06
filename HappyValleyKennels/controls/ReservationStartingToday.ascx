@@ -11,7 +11,7 @@
             <EditItemTemplate>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label1" runat="server" Text='<%# Eval("owner.ownerFirstName") + " " + Eval("owner.ownerLastName") %>'></asp:Label>
+                <asp:Label ID="lblName" runat="server" Text='<%# Eval("owner.ownerFirstName") + " " + Eval("owner.ownerLastName") %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField> 
         <asp:BoundField DataField="reservationStartDate" HeaderText="Start Date" SortExpression="reservationStartDate" />
@@ -29,7 +29,7 @@
             <EditItemTemplate>
             </EditItemTemplate>
             <ItemTemplate>
-                <asp:Label ID="Label1" runat="server" Text='<%# Eval("owner.ownerFirstName") + " " + Eval("owner.ownerLastName") %>'></asp:Label>
+                <asp:Label ID="lblName" runat="server" Text='<%# Eval("owner.ownerFirstName") + " " + Eval("owner.ownerLastName") %>'></asp:Label>
             </ItemTemplate>
         </asp:TemplateField>
         <asp:BoundField DataField="reservationStartDate" HeaderText="Start Date" SortExpression="reservationStartDate" />
