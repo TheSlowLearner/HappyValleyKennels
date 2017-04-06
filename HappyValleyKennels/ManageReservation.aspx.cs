@@ -41,10 +41,10 @@ namespace HappyValleyKennels
                 {
                     ReservationForm.displayReservationList();
                 }
-               
+
             }
         }
-        
+
         protected void checkReservations()
         {
             if (Session["Reservations"] != null)
@@ -54,7 +54,7 @@ namespace HappyValleyKennels
             }
             else
             {
-                if(newUser.user == userType.Client)
+                if (newUser.user == userType.Client)
                 {
                     ReservationForm.displayForm();
                 }
@@ -64,7 +64,7 @@ namespace HappyValleyKennels
         {
             if (Session["Owner"] != null)
             {
-                owner = (Owner)Session["Owner"];                
+                owner = (Owner)Session["Owner"];
             }
         }
 
