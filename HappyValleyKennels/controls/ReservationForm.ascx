@@ -54,7 +54,6 @@
                 <h3>
                     Pets and Services</h3>
                 <hr />
-                <asp:Label id="lblPets" runat="server" />
                 <asp:UpdatePanel ID="accordionUpdatePanel" runat="server">
                     <ContentTemplate>
                         <ajaxToolkit:Accordion ID="ServiceAccordion" runat="server" CssClass="accordion" HeaderCssClass="headerClass" ContentCssClass="contentClass" HeaderSelectedCssClass="headerSelected">
