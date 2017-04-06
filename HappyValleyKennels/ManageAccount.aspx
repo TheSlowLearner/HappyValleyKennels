@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/HappyValleyKennels.Master" AutoEventWireup="true" CodeBehind="ManageAccount.aspx.cs" Inherits="HappyValleyKennels.ManageAccount" %>
+<%@ Page Title="" Language="C#" MasterPageFile="~/HappyValleyKennels.Master" AutoEventWireup="true" CodeBehind="ManageAccount.aspx.cs" Inherits="HappyValleyKennels.ManageAccount" %>
 <%@ Reference Control="~/controls/OwnerList.ascx" %>
 <%@ Register Src="~/controls/OwnerList.ascx" TagPrefix="uc1" TagName="OwnerList" %>
 
@@ -12,6 +12,8 @@
         <h1>
             <asp:Label ID="lblHeader" runat="server" Text="Create Account"></asp:Label>
         </h1>
+
+        <uc1:OwnerList runat="server" ID="OwnerList1" />
         <asp:ValidationSummary runat="server" CssClass="validationSummary" DisplayMode="List"></asp:ValidationSummary>
         <asp:Panel ID="wrapper" runat="server">
             <h3>Owner</h3>
@@ -141,13 +143,13 @@
         </asp:Panel>
 
          <%-- Buttons --%>
-          <div id="blockButtons">
+          <div id="blockButtons" runat="server">
                 <asp:Button ID="btnCreateAccount" CssClass="createButtons btn" runat="server" Text="Create Account" OnClick="btnCreateAccount_Click" />
                 <asp:Button ID="btnUpdateOwner" CssClass="createButtons btn" runat="server" Text="Update Information" OnClick="btnUpdateOwner_Click" />
                <asp:Button ID="btnEdit" CssClass="secondaryButtons" CausesValidation="false" runat="server" Text="Edit" OnClick="btnEdit_Click" />
                 <asp:Button ID="btnCancel" CausesValidation="false" CssClass="secondaryButtons" runat="server" Text="Cancel" OnClick="btnCancel_Click" />
             </div>
-            <div>
+            <div id="requiredInfo" runat="server">
                 <asp:Label ID="lblReqInfo" runat="server" Text="* = Required Fields"></asp:Label>
                 <br />
                 <asp:Label ID="lblReqInfoPhoneEmail" runat="server" Text="** = Either Phone or Email Required"></asp:Label>
