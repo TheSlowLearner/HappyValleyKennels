@@ -31,7 +31,7 @@ namespace HappyValleyKennels.controls
         public String getFixedString(int petNum)
         {
             Pet pet = new Pet();
-            return getFixedString(petNum);
+            return pet.getFixedString(petNum);
         }
         
         public String getSizeString(int petNum)
