@@ -28,6 +28,7 @@ namespace HappyValleyKennels.controls
             checkSavedReservationProgress();
             checkUserType();
             initializePage();
+            addPetPanels();
         }
 
         private void checkReservation()
@@ -66,23 +67,6 @@ namespace HappyValleyKennels.controls
             this.Visible = true;
         }
 
-        private void checkExistingPane(String petNum)
-        {
-            AccordionPane pane = (AccordionPane)ServiceAccordion.FindControl("Pet" + petNum);
-            if (pane != null)
-            {
-                for (int i = 0; i < ServiceAccordion.Panes.Count; i++)
-                {
-                    AccordionPane currPane = ServiceAccordion.Panes.ElementAt(i);
-
-                    if (currPane.ID == pane.ID)
-                    {
-                        ServiceAccordion.Panes.Remove(currPane);
-                    }
-                }
-            }
-        }
-
         private void addPetPanels()
         {
             List<Pet> pets = owner.ownerPet;
@@ -90,7 +74,6 @@ namespace HappyValleyKennels.controls
             {
 
                 Pet currentPet = pets.ElementAt(i);
-                checkExistingPane(currentPet.petNumber.ToString());
                 AccordionPane panel = new AccordionPane();
 
                 //setup header
@@ -99,6 +82,7 @@ namespace HappyValleyKennels.controls
                 currentPetCheck.CssClass = "nameCheckboxes";
                 currentPetCheck.AutoPostBack = true;
                 currentPetCheck.CheckedChanged += checkPet;
+                currentPetCheck.ClientIDMode = ClientIDMode.AutoID;
                 currentPetCheck.Text = currentPet.petName;
                 panel.HeaderContainer.Controls.Add(currentPetCheck);
 
@@ -196,7 +180,6 @@ namespace HappyValleyKennels.controls
 
         private AccordionPane getPane(String petNumber)
         {
-            addPetPanels();
             AccordionPane pane = (AccordionPane)ServiceAccordion.FindControl("Pet" + petNumber);
             return pane;
         }
