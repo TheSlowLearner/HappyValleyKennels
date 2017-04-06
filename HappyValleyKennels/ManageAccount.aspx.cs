@@ -17,6 +17,8 @@ namespace HappyValleyKennels
         private void Page_Load(object sender, EventArgs e)
         {
             checkUserType();
+              if (owner.ownerNumber != 0)
+                lblHeader.Text = "Manage Account";
         }
 
         protected void Page_PreRender(object sender, EventArgs e)
@@ -174,6 +176,8 @@ namespace HappyValleyKennels
         {
             owner = new Owner(ownerNumber, txtFirst.Text, txtLast.Text, txtStreet.Text, txtCity.Text, ddlProvince.SelectedValue, txtPostal.Text, txtPhone.Text, txtEmail.Text, txtEmergFirst.Text, txtEmergLast.Text, txtEmergPhone.Text);
             owner.ownerPet = currentPets;
+            if (Session["user"] == null)
+                Session["user"] = userType.Client;
         }
 
         protected void clear()
